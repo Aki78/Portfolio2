@@ -1,0 +1,189 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{geometry}
+
+% Define colors
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\geometry{
+    margin=1in % Sets all margins to 1 inch. Adjust as needed.
+}
+
+\lstset{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=Python, % Using Python for a more generic syntax highlighting
+    morekeywords={func, if, then, else, return, foreach, in, not, Position}, % Add pseudo-code keywords
+}
+
+\pagestyle{fancy}
+\setlength{\footskip}{70pt}
+\vspace{-2cm}
+\fancyfoot{\rule{0.5\linewidth}{1pt}}
+
+\fancyfoot[L]{{\includegraphics[scale=0.07]{logo.png}}}
+
+\definecolor{lightgreen}{rgb}{0.56, 0.93, 0.56}
+
+\begin{document}
+
+
+\begin{center}
+\includegraphics[scale=0.2]{logo.png}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+
+ Eiaki Morooka \\
+
+\vspace{0.5cm}
+
+{\Huge \textcolor{red}{Fireworks Feud}} \\
+
+
+\vspace{0.5cm}
+
+{\Large \textbf{Period 7}} \\
+
+
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+
+{\Large }
+
+
+
+\begin{tabular}{l}
+ Second year second semester (7th period)\\
+ School of ICT\\
+ Metropolia University of Applied Sciences  \\
+ \\
+ Genre: Action/Puzzle \\
+ Platform: Atari 2600 \\
+ Target Audience: Retrogame fans
+ \today
+\end{tabular}
+\end{center}
+
+
+\begin{abstract}
+"Fireworks Feud," a portfolio project for a second-year Game Development major at Metropolia University of Applied Sciences, is an Atari 2600 game where players engage in a neighborhood dispute as either a Firework Shooter or an Arrow Shooter. This retro-inspired action/puzzle game, designed for both single-player and two-player modes, capitalizes on the Atari 2600's simplistic graphics and sound to deliver engaging gameplay centered around shooting fireworks or arrows. As a showcase of technical and creative skills, "Fireworks Feud" exemplifies the student's ability to craft compelling game experiences within the constraints of classic gaming platforms, highlighting their potential for future contributions to the game development field.
+\end{abstract}
+
+
+
+
+
+
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+%\begin{align*}
+%  \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} &\quad \oint_{\mathcal{S}} \mathbf{E} \cdot d\mathbf{A} &= \frac{Q_{enc}}{\varepsilon_0} \\
+%\end{align*}
+
+
+\section{Game Overview}
+Fireworks Feud for the Atari 2600 is a competitive action game that offers a simple yet challenging gameplay experience. Players choose to be either the Firework Shooter, aiming to launch fireworks successfully, or the Arrow Shooter, aiming to shoot down the fireworks. The game can be played against an AI opponent or in a two-player mode.
+
+
+%
+
+
+\section{Game Mechanics}
+\begin{itemize}
+  \item Players: 1 - 2 (Human or AI for single-player mode)
+  \item Perspective: 2D, side view
+  \item Joystick for aiming/angle, button for shooting/launching.
+  \item Objective:
+    \begin{itemize}
+      \item Firework Shooter: Launch fireworks to achieve the highest score by having them explode at the peak of their trajectory.
+      \item Arrow Shooter: Shoot down as many fireworks as possible to gain points before they explode.
+    \end{itemize}
+\end{itemize}
+
+
+\section{Game Modes}
+
+    \begin{itemize}
+      \item Single Player vs AI: Play as either the Firework Shooter or the Arrow Shooter against the computer.
+      \item Arrow Shooter: Shoot down as many fireworks as possible to gain points before they explode.
+    \end{itemize}
+
+
+\section{Storyline}
+Given the limitations of the Atari 2600 in displaying detailed narratives, the storyline will be implied through gameplay. The concept remains the same—a feud between a teenager launching fireworks and a neighbor determined to shoot them down—with the game's challenge and mechanics driving the narrative.
+
+
+\section{Characters}
+
+    \begin{itemize}
+      \item The Teenager (Firework Shooter): Represented by a simple launcher or cannon on one side of the screen.
+      \item The Neighbor (Arrow Shooter): Represented by a bow or crossbow icon on the opposite side.
+    \end{itemize}
+
+
+
+
+\section{Art and Sound Design}
+
+    \begin{itemize}
+      \item Visual Style: Simplistic, utilizing the Atari 2600's limited color palette and resolution. The fireworks and arrows will be represented by basic shapes and lines.
+      \item Soundtrack: Basic sound effects for launching and shooting, with distinctive sounds for hits and misses, keeping in line with the Atari 2600's audio capabilities.
+    \end{itemize}
+
+
+
+\section{Technical Specifications}
+    \begin{itemize}
+      \item Emulator: Stella
+      \item  Compiler: Dasm
+      \item  Sound: Basic beep and boop sound effects for actions.
+      \item  Graphics: Utilizing the console's native resolution and limited sprite capabilities.
+    \end{itemize}
+
+
+
+\section{Project Timeline}
+    \begin{itemize}
+      \item Training: 3 weeks (online course)
+      \item  Production: 5 weeks
+      \item  Testing and Polishing 2 weeks
+    \end{itemize}
+\end{document}
